@@ -1,0 +1,7 @@
+{
+  "name": "calangoabroad",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

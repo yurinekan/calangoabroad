@@ -1,0 +1,129 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div id="nav1">
+      <ion-img src="../../assets/icon/logo.png" alt="logo"></ion-img>
+
+      <div id="nav1-1">
+        <a (click)="goTo('login')">
+          Entrar
+        </a>
+        <a (click)="goTo('register')">
+          Cadastre-se
+        </a>
+      </div>
+
+    </div>
+    <div id="nav2">
+      <a>Parcerias</a>
+      <a>Quem somos?</a>
+      <a>Atendimento ao cliente</a>
+      <a>Dúvidas Frequentes</a>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+
+    <div id="c1">
+      <div id="c1-1">
+        <p>Somos a <span>Calango Abroad</span>, seja bem-vindo! Prestamos um serviço que vai torar sua empresa maior do
+          que já é!
+          Se interessou? Cadastre-se ao lado.</p>
+      </div>
+      <div id="c1-2">
+        <ion-button (click)="goTo('register')" class="ion-text-capitalize">Cadastre-
+          <span class="ion-text-lowercase">se</span></ion-button>
+      </div>
+    </div>
+
+    <div id="c2">
+
+      <div id="c2-1">
+        <p>O que é o Calango Abroad</p><br>
+        <span>Saiba as vantagens de ser um Calango Abroad</span>
+      </div>
+
+      <div id="c2-2">
+
+        <ion-img id="first" src="../../assets/vitrineVirtual.svg"></ion-img>
+
+        <div id="c2-2-0">
+
+          <div id="c2-2-1">
+            <ion-img src="../../assets/assessoria.svg"></ion-img>
+            <ion-img src="../../assets/analises.svg"></ion-img>
+          </div>
+
+          <div id="c2-2-2">
+            <ion-img src="../../assets/dicasFinanceiras.svg"></ion-img>
+            <ion-img src="../../assets/calculos.svg"></ion-img>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="c3">
+      <div id="c3-1">
+        <p>Nossos pacotes</p>
+      </div>
+
+      <div id="c3-2">
+
+        <div class="box">
+          <label id="a3">Basic</label>
+          <p>Divulgação de 5 produtos<br><br>
+
+            Contato de chat com 5 clientes<br><br>
+
+            Relatório trimestral de possíveis mercados alvo<br><br><br>
+            <br><br><br>
+            <br>
+
+            <span id="a3">Gratuito</span>
+          </p>
+          <ion-button class="ion-text-capitalize">Assine&nbsp;<label id="l3">basic</label></ion-button>
+        </div>
+        <div class="box">
+          <label id="a2">Light</label>
+          <p>Divulgação de 5 produtos<br><br>
+
+            Contato de chat com 10 clientes<br><br>
+
+            Tradução automática em Inglês e Espanhol da vitrine virtual<br><br>
+
+            Relatório trimestral de possíveis mercados alvo<br><br><br>
+
+
+            <span id="a2">R$ 499,00/mês</span></p>
+          <ion-button class="ion-text-capitalize">Assine&nbsp;<label id="l2">light</label></ion-button>
+        </div>
+        <div class="box">
+          <label id="a1">Premium</label>
+          <p>
+            Divulgação ilimitada de produtos<br><br>
+
+            Contato ilimitado com clientes<br><br>
+
+            Tradução automática em Inglês e Espanhol da vitrine virtual<br><br>
+
+            Relatório trimestral de possíveis mercados alvo<br><br>
+
+            <span id="a1">R$ 899,00/mês</span>
+
+          </p>
+          <ion-button class="ion-text-capitalize">Assine&nbsp;<label id="l1">premium</label></ion-button>
+        </div>
+
+      </div>
+    </div>
+    <div class="" id="c4">
+      <div id="c4-1">
+        <p>Nos encontre também na Apple Store e PlayStore</p><br>
+        <span>tel: (77) 9999-8989</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

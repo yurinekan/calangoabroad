@@ -1,0 +1,86 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div id="nav1">
+      <ion-img (click)="goTo('home')" src="../../assets/icon/logo.png" alt="logo"></ion-img>
+
+      <div id="nav1-1">
+        <a>
+          Já tem uma conta?
+          <span (click)="goTo('login')">
+            Entrar
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+
+    <main>
+      <h2>Cadastre-se e faça parte do <strong>Calango Abroad</strong></h2>
+      <form [formGroup]="fGroup">
+        <div class="name">
+
+          <ion-item>
+            <ion-input [(ngModel)]="name" placeholder="Nome" formControlName="name"></ion-input>
+            <span *ngIf="fGroup.controls.name.hasError('pattern')" > Apenas Letras </span>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="lastname" placeholder="Sobrenome" formControlName="lastname"></ion-input>
+            <span *ngIf="fGroup.controls.lastname.hasError('pattern')" > Apenas Letras </span>
+          </ion-item>
+
+        </div>
+        <ion-item>
+          <ion-input type="tel" [(ngModel)]="phone" placeholder="(DDD) + Telefone" formControlName="phone"></ion-input>
+          <span *ngIf="fGroup.controls.phone.hasError('minlength')" > No mínimo 11 digitos </span>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="email" placeholder="E-mail" formControlName="email"></ion-input>
+          <span *ngIf="fGroup.controls.email.hasError('email')" > Email inválido </span>
+        </ion-item>
+        <select id="estado" name="estado">
+          <option value="">Selecione o estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+          <option value="EX">Estrangeiro</option>
+      </select>
+        <ion-item>
+          <ion-input type="password" [(ngModel)]="password" placeholder="Senha" formControlName="password"></ion-input>
+          <span *ngIf="fGroup.controls.password.hasError('minlength')" > No mínimo 8 digitos </span>
+        </ion-item>
+        
+      </form>
+      <ion-button class="ion-text-capitalize" color="secondary" [disabled]="!fGroup.valid" (click)="register()">Continuar</ion-button>
+
+    </main>
+  </div>
+  </ion-content>

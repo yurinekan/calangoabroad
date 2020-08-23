@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div id="nav1">
+      <ion-img (click)="goTo('home')" src="../../assets/icon/logo.png" alt="logo"></ion-img>
+
+      <div id="nav1-1">
+        <a>
+          Ainda não tem uma conta?
+          <span (click)="goTo('register')">
+            Cadastre-se
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+
+    <main>
+      <h2>Bem vindo de volta, <strong>Calango</strong>! Faça o login<br> para acessar sua conta.</h2>
+      <ion-item>
+        <ion-input [(ngModel)]="userInfo.email" placeholder="E-mail"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" [(ngModel)]="userInfo.password" placeholder="Senha"></ion-input>
+      </ion-item>
+      <ion-button class="ion-text-capitalize" color="secondary" (click)="login()">Continuar</ion-button>
+    </main>
+  </div>
+  </ion-content>

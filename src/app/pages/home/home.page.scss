@@ -1,0 +1,206 @@
+p,
+a, label {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4vw;
+  ion-img {
+    width: 18rem;
+    margin-left: 3.2rem;
+  }
+  #nav1-1 {
+    margin-right: 3.2rem;
+    a {
+      color: #f2b30c;
+      transition: font-size 0.2s;
+      &:first-child {
+        margin-right: 3.2rem;
+        color: #5b5a5a;
+      }
+      &:hover {
+        font-size: 110%;
+      }
+    }
+  }
+}
+
+#nav2 {
+  height: 4vw;
+  background: #d4d4d4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  a {
+    color: white;
+    transition: color 0.2s;
+    &:hover {
+      color: #f2b30c;
+    }
+  }
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  #c1 {
+    background-image: url("../../../assets/backgroundHome.svg");
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    #c1-1 {
+      width: 30vw;
+      span {
+        font-weight: 400;
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: white;
+      }
+    }
+    #c1-2 {
+      ion-button {
+        font: 1.8rem "Josefin Sans", sans-serif;
+        --border-radius: 0;
+        --color: #5b5a5a;
+        --background: white;
+        --background-color-activated: rgb(211, 211, 211);
+        width: 25rem;
+        height: 4rem;
+        &::first-letter {
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+  #c2 {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    #c2-1 {
+      padding: 3.2rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 48vw;
+      p {
+        font-size: 1.8rem;
+      }
+      span {
+        font-family: "Josefin Sans", sans-serif;
+        color: #c4c4c4;
+      }
+    }
+    #c2-2 {
+      display: flex;
+      background: rgb(255, 255, 255);
+      padding-bottom: 7vw;
+      ion-img {
+        border: 10px solid white;
+        cursor: pointer;
+      }
+      justify-content: center;
+      ion-img#first {
+        margin-left: 3.6vw;
+      }
+      #c2-2-0 {
+        display: flex;
+        flex-direction: column;
+        #c2-2-1 {
+          display: flex;
+          flex-direction: row;
+        }
+        #c2-2-2 {
+          border-top: 15px solid white;
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+  #c3 {
+    width: 100%;
+    background: #f1f1f1;
+    #c3-1 {
+      padding: 3.2rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 56.3vw;
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    #c3-2 {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 16vw 7vw;
+    }
+    .box {
+      width: 20vw;
+      height: 30vw;
+      background: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      p {
+        padding: 0 30px;
+        text-align: center;
+        font-size: 1.6rem;
+      }
+        #l1, #a1 {
+          color: #13ce74;
+        }
+        label#a1, label#a2, label#a3 {
+          margin: 3.4rem 0;
+          font-size: 2.4rem;
+        }
+        #l2, #a2 {
+          color: #7591f5;
+        }
+        #l3, #a3 {
+          color: #dc6fde;
+        }
+      ion-button {
+        font: 1.8rem "Josefin Sans", sans-serif;
+        margin-top: 5.5vw;
+        --border-radius: 0;
+        --color: #5b5a5a;
+        --background: #e5e5e5;
+        --background-color-activated: rgb(190, 190, 190);
+        width: 16vw;
+        height: 3vw;
+      }
+    }
+  }
+  #c4 {
+    width: 100%;
+    height: 22%;
+    background: #f2b30c;
+    display: flex;
+    align-items: center;
+    #c4-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start;
+      margin-left: 16vw;
+      p {
+        font-size: 1.2rem;
+        color: white;
+      }
+      span {
+        font-family: "Josefin Sans", sans-serif;
+        color: #ffffff;
+      }
+    }
+  }
+}

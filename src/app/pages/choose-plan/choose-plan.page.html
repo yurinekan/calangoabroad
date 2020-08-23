@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div id="nav1">
+      <ion-img (click)="goTo('choose-plan')" src="../../assets/icon/logo.png" alt="logo"></ion-img>
+
+      <div id="nav1-1">
+        <a (click)="logout()">
+          Sair
+        </a>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+<div id="c3-2">
+
+  <div class="box">
+    <label id="a3">Basic</label>
+    <p>Divulgação de 5 produtos<br><br>
+      
+      Contato de chat com 5 clientes<br><br>
+      
+      Relatório trimestral de possíveis mercados alvo<br><br><br>
+      <br><br><br>
+      <br>
+      
+      <span id="a3">Gratuito</span>
+    </p>
+    <ion-button (click)="goTo('profile')" class="ion-text-capitalize">Assine&nbsp;<label id="l3">basic</label></ion-button>
+  </div>
+  <div class="box">
+    <label id="a2">Light</label>
+    <p>Divulgação de 5 produtos<br><br>
+      
+      Contato de chat com 10 clientes<br><br>
+      
+      Tradução automática em Inglês e Espanhol da vitrine virtual<br><br>
+      
+      Relatório trimestral de possíveis mercados alvo<br><br><br>
+      
+      
+      <span id="a2">R$ 499,00/mês</span></p>
+      <ion-button (click)="goTo('profile')" class="ion-text-capitalize">Assine&nbsp;<label id="l2">light</label></ion-button>
+    </div>
+    <div class="box">
+      <label id="a1">Premium</label>
+      <p>
+        Divulgação ilimitada de produtos<br><br>
+        
+        Contato ilimitado com clientes<br><br>
+        
+        Tradução automática em Inglês e Espanhol da vitrine virtual<br><br>
+        
+        Relatório trimestral de possíveis mercados alvo<br><br>
+        
+        <span id="a1">R$ 899,00/mês</span>
+        
+      </p>
+      <ion-button (click)="goTo('profile')" class="ion-text-capitalize">Assine&nbsp;<label id="l1">premium</label></ion-button>
+    </div>
+  </div>
+    
+  </ion-content>
+  
